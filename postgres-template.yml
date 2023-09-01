@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Template
+metadata:
+  name: postgres-template
+objects:
+  - kind: ImageStream
+    metadata:
+      name: postgres
+  - kind: DeploymentConfig
+    metadata:
+      name: postgres
+    spec:
+      replicas: 1  
+      template:
+        metadata:
+          labels:
+            app: postgres
+        spec:
+          containers:
+            - name: postgres
+              image: postgres:latest  
+              ports:
+                - containerPort: 5432
+              env:
+                - name: POSTGRES_DB
+                  value: postgres
+                - name: POSTGRES_USER
+                  value: postgres
+                - name: POSTGRES_PASSWORD
+                  value: Lamp054
+  - kind: Service
+    metadata:
+      name: postgres
+    spec:
+      ports:
+        - name: 5432-tcp
+          port: 5432
+          targetPort: 5432
+      selector:
+        app: postgres

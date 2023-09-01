@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Ver detalle del clima</title>
+<link rel="stylesheet" th:href="@{/css/detalleclima.css}" />
+</head>
+<body>
+<div class="container">
+  <h2>Detalle del clima</h2>
+  <p>Fecha: <span th:text="${clima.current.last_updated}"></span></p>
+  <p>Pais: <span th:text="${clima.location.country}"></span></p>
+  <p>Country: <span th:text="${clima.location.name}"></span></p>
+  <p>Región: <span th:text="${clima.location.region}"></span></p>
+  <p>Temperatura: <span class="temperature" th:text="${clima.current.temp_c}"></span>°C</p>
+  <p>Temperatura Fahrenheit: <span class="temperature" th:text="${clima.current.temp_f}">F</span>F</p>
+   <a th:href="@{/}" class="back-button">Buscar otra región</a>
+</div>
+</body>
+</html>
