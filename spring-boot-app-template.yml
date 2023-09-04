@@ -20,14 +20,14 @@ objects:
             - name: spring-boot-app
               image: spring-boot-app:latest 
               ports:
-                - containerPort: 8080
+                - containerPort: 8082
   - kind: Service
     metadata:
       name: spring-boot-app
     spec:
       ports:
-        - name: 8080-tcp
-          port: 8080
-          targetPort: 8080
+        - name: 8082-tcp
+          port: 8082
+          targetPort: 8082
       selector:
         app: spring-boot-app
