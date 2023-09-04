@@ -1,19 +1,19 @@
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
-  name: my-springboot-app
+  name: Consuming-Apirest-Java-Deploy
 spec:
   replicas: 1
   selector:
-    app: my-springboot-app
+    app: Consuming-Apirest-Java-Deploy
   template:
     metadata:
       labels:
-        app: my-springboot-app
+        app: Consuming-Apirest-Java-Deploy
     spec:
       containers:
-        - name: my-springboot-app
-          image: your-springboot-image:latest
+        - name: Consuming-Apirest-Java-Deploy
+          image: Consuming-Apirest-Java-Deploy-image:latest
           ports:
             - containerPort: 8082
           env:
