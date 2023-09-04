@@ -18,7 +18,7 @@ FROM registry.access.redhat.com/ubi8/openjdk-17-runtime:1.15-1.1682053056
 
 COPY --from=builder /home/jboss/project/target/export-run-artifact.jar  /deployments/export-run-artifact.jar
 
-ENV SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/postgres
+ENV SPRING_DATASOURCE_URL=jdbc:postgresql://postgresql:5432/postgres
 ENV SPRING_DATASOURCE_USERNAME=postgres
 ENV SPRING_DATASOURCE_PASSWORD=Lamp054
 EXPOSE 8082
