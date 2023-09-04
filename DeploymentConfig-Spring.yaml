@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: Consuming-Apirest-Java-Deploy
-          image: Consuming-Apirest-Java-Deploy-image:latest
+          image: Consuming-Apirest-Java-Deploy:latest
           ports:
             - containerPort: 8082
           env:

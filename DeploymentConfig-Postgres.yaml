@@ -1,18 +1,18 @@
 apiVersion: apps.openshift.io/v1
 kind: DeploymentConfig
 metadata:
-  name: postgres
+  name: postgresql
 spec:
   replicas: 1
   selector:
-    app: postgres
+    app: postgresql
   template:
     metadata:
       labels:
-        app: postgres
+        app: postgresl
     spec:
       containers:
-        - name: postgres
+        - name: postgresql
           image: postgres:latest
           ports:
             - containerPort: 5432

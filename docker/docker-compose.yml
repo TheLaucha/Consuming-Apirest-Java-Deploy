@@ -1,7 +1,7 @@
 version: '3'
 services:
   spring-boot-app:
-    image: Consuming-Apirest-Java-Deploy
+    image: Consuming-Apirest-Java-Deploy:latest
     build:
       context: .
       dockerfile: Dockerfile 
