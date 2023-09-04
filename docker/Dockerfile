@@ -1,14 +1,4 @@
-####
-# This Dockerfile is used in order to build a container that runs the Spring Boot application
-#
-# Build the image with:
-#
-# docker build -f docker/Dockerfile -t springboot/sample-demo .
-#
-# Then run the container using:
-#
-# docker run -i --rm -p 8081:8081 springboot/sample-demo
-####
+
 FROM registry.access.redhat.com/ubi8/openjdk-17:1.15-1.1682053058 AS builder
 
 RUN mkdir project
