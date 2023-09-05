@@ -20,7 +20,7 @@ parent:
 components:
   - name: image-build
     image:
-      imageName: Consuming-Apirest-Java-Deploy-image:latest
+      imageName: Consuming-Apirest-Java-Deploy:latest
       dockerfile:
         uri: docker/Dockerfile
         buildContext: .
