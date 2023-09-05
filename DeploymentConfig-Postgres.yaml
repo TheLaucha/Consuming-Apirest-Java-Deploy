@@ -22,4 +22,4 @@ spec:
             - name: POSTGRES_USER
               value: postgres
             - name: POSTGRES_PASSWORD
-              value: Lamp054
+              value: password

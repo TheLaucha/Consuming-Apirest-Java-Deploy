@@ -13,7 +13,7 @@ services:
       
       SPRING_DATASOURCE_URL: jdbc:postgresql://postgresql:5432/postgres
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: Lamp054
+      SPRING_DATASOURCE_PASSWORD: password
 
   postgres:
     image: postgres:latest
@@ -23,7 +23,7 @@ services:
     environment:
       POSTGRES_DB: postgres
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: Lamp054
+      POSTGRES_PASSWORD: password
     ports:
       - "5432:5432"
 
