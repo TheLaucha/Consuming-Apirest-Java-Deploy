@@ -1,4 +1,4 @@
-FROM gradle:7.2.0-jdk17 AS builder
+FROM openjdk:17-jre-slim
 WORKDIR /app
 COPY . .
 RUN gradle build
