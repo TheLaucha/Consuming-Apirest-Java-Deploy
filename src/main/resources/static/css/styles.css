@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-image: url(img/img3.jpg);
+  background: radial-gradient(circle, #000080, #808080);
   display: flex;
   justify-content: center;
   align-items: center;
