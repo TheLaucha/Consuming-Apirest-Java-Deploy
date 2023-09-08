@@ -5,9 +5,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
-
 import com.ideas.springboot.web.app.service.dto.team.TeamResponse;
-
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

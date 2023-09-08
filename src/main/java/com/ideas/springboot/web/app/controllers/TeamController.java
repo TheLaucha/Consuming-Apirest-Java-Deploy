@@ -1,16 +1,12 @@
 package com.ideas.springboot.web.app.controllers;
 
-
 import java.util.Map;
-
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
 import com.ideas.springboot.web.app.service.TeamService;
-import com.ideas.springboot.web.app.service.dto.team.Datosclima;
 import com.ideas.springboot.web.app.service.dto.team.DatosclimaService;
 import com.ideas.springboot.web.app.service.dto.team.TeamResponse;
 
