@@ -8,6 +8,10 @@ public class TeamResponse {
 	 private LocationDTO location;
 	 private CurrentDTO current;
 
+	 
+	    public TeamResponse() {
+	        // Constructor sin argumentos requerido por Jackson
+	    }
 
 	    public LocationDTO getLocation() {
 	        return location;

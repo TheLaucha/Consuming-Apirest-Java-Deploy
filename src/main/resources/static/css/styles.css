@@ -2,11 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: radial-gradient(circle, #000080, #808080);
+  background-image: url('fondo.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-size: cover;
 }
 
 .container {
