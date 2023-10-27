@@ -38,7 +38,8 @@ public class TeamController {
       */
 
     //@CrossOrigin(origins = "http://localhost:5173") 
-    @PostMapping("/buscarclima")
+    //@PostMapping("/buscarclima")
+    @GetMapping("/buscarclima")
     public TeamResponse buscarClima(/*@RequestParam String region*/) {
         String region = "Cordoba";
         TeamResponse respuesta = this.teamService.buscarClima(region);
