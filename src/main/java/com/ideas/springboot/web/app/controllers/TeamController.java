@@ -1,6 +1,7 @@
 package com.ideas.springboot.web.app.controllers;
 
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +11,7 @@ import com.ideas.springboot.web.app.service.dto.team.DatosclimaService;
 import com.ideas.springboot.web.app.service.dto.team.TeamResponse;
 
 
+@CrossOrigin(origins = "*")
 @RestController
 @ComponentScan
 public class TeamController {
